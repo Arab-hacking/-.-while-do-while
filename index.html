@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const log = console.log.bind(console);
+        // Цикл for
+        // for (начало; условие; шаг)
+        let students = [
+        { id: 1, name: "Arab", group: "2P2" },
+        { id: 2, name: "Said", group: "2P2" },
+        { id: 3, name: "Abdul-Aziz", group: "2P2" },
+        { id: 4, name: "Maria", group: "1P3" },
+        { id: 5, name: "Alex", group: "2P2" },
+        { id: 6, name: "Elena", group: "3P1" },
+        { id: 7, name: "Omar", group: "1P3" },
+        { id: 8, name: "Dmitry", group: "2P2" },
+        { id: 9, name: "Laura", group: "3P1" },
+        { id: 10, name: "Ali", group: "1P3" },
+        { id: 11, name: "Sofia", group: "2P2" },
+        { id: 12, name: "David", group: "3P1" },
+        { id: 13, name: "Emma", group: "1P3" },
+        { id: 14, name: "Maxim", group: "2P2" },
+        { id: 15, name: "Diana", group: "3P1" },
+        { id: 16, name: "Lucas", group: "1P3" },
+        { id: 17, name: "Yusuf", group: "2P2" },
+        { id: 18, name: "Chloe", group: "3P1" },
+        { id: 19, name: "Ivan", group: "1P3" },
+        { id: 20, name: "Amira", group: "2P2" }
+        ];
+
+        for (let i = 0; i < students.length; i++){
+            log(`Студент: ${students[i].name}, Группа: ${students[i].group}`);
+        }
+
+
+        for(let i = 1; i < 10; i++){
+            for(let j = 1; j < 10; j++){
+                log(`${i} * ${j} = ${i * j}`);    
+            }
+            log("-------------|");
+        }
+
+
+        for ( let i = 0; i < 20; i++){
+            if(i == 7 || i == 9 || i == 12){
+                continue
+            } else if (i == 17){
+                break
+            }
+            log(i)
+        }
+        log("-------------|")
+        for ( let i = 0; i < 20; i++){
+            if (i % 2 === 0){
+                continue
+            } else {
+                log(i)
+            }
+        }
+        log("-------------|")
+        for ( let i = 0; i < 20; i++){
+            if (i % 2 === 0){
+                log(i)
+            } else {
+                continue
+            }
+        }
+        log("-------------|")
+        let i = 0
+        while(i < 10){
+            i++
+            log(i)
+            if (i == 3){
+                break
+            }
+        }
+
+    </script>
+</body>
+</html>
